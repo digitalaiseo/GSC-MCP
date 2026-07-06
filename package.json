@@ -1,0 +1,42 @@
+{
+  "name": "suganthan-gsc-mcp",
+  "version": "2.2.2",
+  "description": "Google Search Console MCP server for Claude. 20 SEO analysis tools including quick wins, traffic drops, content decay, cannibalisation, CTR opportunities, and multi-site dashboards. OAuth and service account support.",
+  "main": "dist/index.js",
+  "bin": {
+    "suganthan-gsc-mcp": "dist/index.js"
+  },
+   
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "google-search-console",
+    "seo",
+    "claude",
+    "gsc"
+  ],
+  "author": "Pratima",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "googleapis": "^144.0.0",
+    "open": "^10.1.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
